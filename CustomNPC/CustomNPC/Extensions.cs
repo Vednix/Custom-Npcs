@@ -63,11 +63,12 @@ namespace CustomNPC
             if (player.TPlayer.ZoneWaterCandle)
                 biome |= BiomeTypes.WaterCandle;
 
-            if (player.TPlayer.ZoneBeach)
-                biome |= BiomeTypes.Beach;
+            // Not in 1.3.0 :(
+            //if (player.TPlayer.ZoneBeach)
+            //    biome |= BiomeTypes.Beach;
 
-            if (player.TPlayer.ZoneSandstorm)
-                biome |= BiomeTypes.Sandstorm;
+            //if (player.TPlayer.ZoneSandstorm)
+            //    biome |= BiomeTypes.Sandstorm;
 
             if (biome == BiomeTypes.None)
             {

@@ -655,7 +655,7 @@ namespace CustomNPC
                     }
                     else
                     {
-                        NetMessage.SendData(23, -1, -1, null, obj.mainNPC.whoAmI, 0f, 0f, 0f, 0);
+                        NetMessage.SendData(23, -1, -1, "", obj.mainNPC.whoAmI, 0f, 0f, 0f, 0);
                     }
                 }
             }
@@ -806,7 +806,7 @@ namespace CustomNPC
                 proj.ai[1] = ai.Item2;
 
                 // send projectile as a packet
-                NetMessage.SendData(27, -1, -1, null, projectileIndex);
+                NetMessage.SendData(27, -1, -1, "", projectileIndex);
             }
         }
 
